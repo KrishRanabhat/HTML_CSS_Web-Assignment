@@ -15,9 +15,7 @@ body{
 }
 
 h1 { 
-     
-	display: inline;
-	text-align: center;
+    text-align: center;
 	color: black;
 	font-size: 55px;	
 }
@@ -74,7 +72,6 @@ h2 {
 }	
 
 .indexheader {
-    /* background-color: grey; */
 	margin:0;
 	padding: 20px;
 }
@@ -101,6 +98,7 @@ h2 {
 	padding: 0;
     list-style: none;
 	text-decoration: none;
+    transition: transform 0.5s ease;
 
 }
 
@@ -109,13 +107,14 @@ h2 {
     font-weight: bold;
 	text-decoration: none;
     padding: 10px;
-	display: inline-block;
-    transition: color 0.5s ease, transform 0.5s ease;
-
-
+    transition: transform 0.5s ease;
 }
+
 .navlink:hover {
 	color: red; 
+}
+
+.navoption:hover {
 	transform: scale(1.2);
 
 }
@@ -131,7 +130,10 @@ h2 {
 }
 
 
-footer {
+.credits {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	font-size: 15px;
 	margin-top: 65px;
     font-weight: bold;
@@ -140,7 +142,7 @@ footer {
 	animation-iteration-count: infinite;
 }
 
-footer a {
+.credits a {
 	color: black;
     font-weight: bold;
 	font-family: Helvetica;
@@ -151,15 +153,13 @@ footer a {
 	animation-iteration-count: infinite;
 	border-radius: 0;
 	padding: 9px;
-	display: inline-block;
 	transition: color 0.5s ease, border 0.5s ease, background-color 0.5s ease;
 
 }
 
-footer a:hover{
+.credits a:hover{
 	background-color: grey;
 	border-radius: 8px;
-	/* transform: scale(1.3); */
 }
 
 @keyframes colorchange{
@@ -221,13 +221,6 @@ footer a:hover{
 
 
 
-
-
-
-
-
-
-
 /* Responsive */
 @media screen and (max-width: 500px) {
 
@@ -267,6 +260,6 @@ footer a:hover{
 	grid-template-columns: 200px 200px 200px 200px;
 }
 .project img {
-	width: 70%;
+	width: 100%;
 }
 }
