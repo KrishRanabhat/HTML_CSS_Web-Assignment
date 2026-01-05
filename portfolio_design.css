@@ -170,6 +170,20 @@ h2 {
 }
 
 
+
+.hamburgericon {
+	font-size: 25px;
+	display: none;
+	cursor: pointer;
+}
+
+
+#menuopen {
+	display: none;
+}
+
+
+
 /* Project.html */
 
 
@@ -218,48 +232,92 @@ h2 {
 
 
 
+/* contact.html files's css code */
 
+.messagehead {
+	margin-top: 20px;
+}
 
+.formMain {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-color: rgba(81, 123, 130, 0.7);
+	padding: 35px;
+	border-radius: 10px;
+	width: 30%;
+	margin-top: 5px;
+	margin-left: 480px;
+}
+
+form {
+	display: flex;
+    flex-direction: column;
+	width: 100%;
+	
+
+}
 
 /* Responsive */
 @media screen and (max-width: 500px) {
 
-    .navbaritem {
-        flex-direction: row;
-		align-items: center;
-    }
-	
-	.navoption{
-		width: 100%;         
-		margin: 5px;
-		align-items: center;
+.hamburgericon {
+	display: block;
 	}
 	
-	.main{
-		padding: 10px;
-	}
-	
-	.introsection{
-		padding: 10px;
-	}
-	
-	.nav-option {
-    text-align: center;
-  }
-  
-    .nav-link {
-    display: block;      
+.navbar {
+	display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(81, 123, 130, 0.9);
     padding: 10px;
   }
   
-  footer {
-	  text-align: center;
+.navbaritem {
+	flex-direction: column;
+    align-items: center;
+  }
+  
+.navoption {
+    margin: 10px;
+  }
+  
+#menuopen:checked + .hamburgericon + .navbar {
+    display: flex;
+  }
+  
+#menuopen {
+  display: none;
+}
+
+.main{
+	padding: 10px;
+	}
+	
+.introsection{
+	padding: 10px;
+	}
+	
+.credits {
+	font-size: 15px;
+	flex-direction: column;
+    align-items: center;
+  }
+  
+  .idnumber {
+	margin-top: 20px;
+	text-align: center;
   }
 
+
 .projectcontainer {
-	grid-template-columns: 200px 200px 200px 200px;
+	grid-template-columns: 300px;
 }
+
 .project img {
 	width: 100%;
 }
+
+
+
 }
