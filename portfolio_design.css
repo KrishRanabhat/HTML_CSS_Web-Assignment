@@ -181,6 +181,20 @@ h2 {
 }
 
 
+
+.hamburgericon {
+	font-size: 25px;
+	display: none;
+	cursor: pointer;
+}
+
+
+#menuopen {
+	display: none;
+}
+
+
+
 /* Project.html */
 
 
@@ -403,6 +417,7 @@ input[type="submit"]:hover {
 	margin-top: 20px;
 	text-align: center;
 }
+
 
 
 .projectcontainer {
