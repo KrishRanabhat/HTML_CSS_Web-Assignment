@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+<title>My Contact</title>
 <link rel="stylesheet" href="portfolio_design.css" type="text/css">
 </head>
 <body>
@@ -12,7 +12,7 @@
 <div class = "info">Krish Ranabhat | <div> My Contact</div></div>
 
 <input type="checkbox" id="menuopen">
-<label class="hamburgericon" for="menuopen">&#9776; <!--  Code of Hamburger icon --></label>
+<label class="hamburgericon" for="menuopen">&#9776;</label>
 
 <nav class="navbar">
 
@@ -28,36 +28,33 @@
 
 <h1 class = "messagehead">Hey, Say Something!</h1>
 
-<div class = "formMain">
+<div class = "formMain" id = "mailcontact">
 
 
-<form action = "mailto:krishranabhat55@gmail.com" method = "post" type = "text">
+<form action = "mailto:krishranabhat55@gmail.com" method = "post" enctype = "text/plain">
 
-<label>NAME:</label>
+<div class = "userinfo">
 <input type = "text" name = "name" required = "required" placeholder= "Enter Name">
 
-<label>EMAIL:</label>
 <input type = "email"  name = "email" required = "required" placeholder= "Enter Your Email"> 
+</div>
 
-<label>MESSAGE:</label>
 <textarea name="message" rows = "10" placeholder= "Enter Message"></textarea>
 
 <input type = "submit" value = "Send Message">
-<input type = "reset" value = "Clear">
 </form>
 </div>
 
-<footer class = "credits">
+<footer class = "contactmain">
 
-<div class="contactmain">
 <div class = "contactshapes">
-<div class = "contactinfo">Instagram</div>
-<div class = "contactinfo">Facebook</div>
-<div class = "contactinfo">GitHub</div>
+<p>Contact Me:</p>
+<div class = "contactinfo"><a class = "contactlink" href = "https://www.instagram.com/krrb5555/"><img src = "Image_Resources/instagram.png" height = "55px" width = "55px" alt = "Instagram Link"></a></div>
+<div class = "contactinfo"><a class = "contactlink" href = "https://github.com/KrishRanabhat"><img src = "Image_Resources/github.png" height = "55px" width = "55px" alt = "GitHub Link"></a></div>
+<div class = "contactinfo"><img src = "Image_Resources/communication.png"  height = "55px" width = "55px" alt = "email link" onclick = "alert('My Email address is: krishranabhat55@gmail.com')"></div>
 </div>
 
-</div>
 </footer>
-
 </body>
 </html>
+
