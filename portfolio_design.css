@@ -1,4 +1,4 @@
-/* Index.html file's CSS codes. */
+/* index.html file's CSS codes. */
 body{
 	background-image: url('Image_Resources/backimg.JPG');
     background-size: cover;
@@ -52,7 +52,6 @@ h2 {
 	display: flex; 
 	color: black;
 	justify-content: left;
-	align-items: center;
 	font-weight: bold;
 	font-size: 20px;
 	
@@ -194,7 +193,7 @@ h2 {
 }
 
 
-/* Project.html file's CSS codes. */
+/* project.html file's CSS codes. */
 
 
 .projectmain {
@@ -244,7 +243,6 @@ h2 {
 /* contact.html files's CSS codes. */
 
 .messagehead {
-	font-size: 30px;
 	margin-top: 2px;
 	margin-bottom: 1px;
 	padding: 4px;
@@ -367,6 +365,8 @@ input[type="submit"]:hover {
 
 
 .contactinfo img {
+	height: 55px;
+	width: 55px;
 	transition: transform 0.5s ease;
 }
 
@@ -436,18 +436,63 @@ input[type="submit"]:hover {
   width: 800px;
 }
 
+.youtubevideolink {
+	animation-name: contactcolorchange;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+@keyframes contactcolorchange {
+	0%{color: white;}
+	60%{color: cyan;}
+	100%{color: aqua;}
+
+}
+
+.youtubevideolink img{
+	height: 55px;
+	width: 55px;
+	transition: transform 0.5s ease;
+}
+
+.youtubevideolink img:hover {
+	transform: scale(1.2);
+}
+
+
+/* videodemo.html file's CSS codes. */
+
+.videodemomain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.videodemomain iframe {
+	height: 400px;
+	width: 800px;
+	box-shadow: 3px 2px 25px 1px teal;
+
+}
 
 
 
 
 
+/* Mobile Responsive css code */
 
-/* Responsive */
+
 @media screen and (max-width: 500px) {
+
+
+/* index.html file's CSS codes. */
 
 .hamburgericon {
 	display: block;
-	}
+}
 	
 .navbar {
 	display: none;
@@ -493,6 +538,9 @@ input[type="submit"]:hover {
 	text-align: center;
 }
 
+
+/* project.html file's CSS codes. */
+
 .projectcontainer {
 	grid-template-columns: 300px;
 }
@@ -502,10 +550,11 @@ input[type="submit"]:hover {
 }
 
 
+/* contact.html file's CSS codes. */
 
 
 .messagehead {
-	font-size: 24px;
+	font-size: 44px;
 	text-align: center;
 }
 
@@ -549,6 +598,7 @@ input[type="submit"] {
 }
 
 
+/* sitereport.html file's CSS codes. */
 
 
 .sitereportmain p {
@@ -580,5 +630,19 @@ input[type="submit"] {
 	width: 360px;
 	height: 250px;
 }
+
+.videodemomain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.videodemomain iframe {
+	height: 200px;
+	width: 400px;
+	box-shadow: 3px 2px 25px 1px teal;
+
+}
+
 
 }
