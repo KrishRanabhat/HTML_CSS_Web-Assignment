@@ -1,6 +1,6 @@
 /* index.html file's CSS codes. */
 body{
-	background-image: url('Image_Resources/Backimg.JPG');
+	background-image: url('Image_Resources/Backimg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -384,6 +384,27 @@ input[type="submit"]:hover {
 	align-items: center;
 }
 
+.videodemomain h1 {
+	font-size: 38px;
+}
+
+.videodemomain h3 {
+	color: white;
+}
+
+.videodemomain a {
+	text-decoration: none;
+	animation-name: videodemocolorchange;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes videodemocolorchange{
+	0%{color: white;}
+	60%{color: cyan;}
+	100%{color: aqua;}
+}
+
 .videodemomain iframe {
 	height: 400px;
 	width: 800px;
@@ -418,6 +439,25 @@ input[type="submit"]:hover {
 .sitereportmain h2 {
 	font-size: 40px;
 
+}
+
+.sitereportmain span {
+	display: block;
+	font-weight: bold;
+
+}
+
+.sitereportmain a {
+	text-decoration: none;
+	animation-name: sitereportcolorchange;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes sitereportcolorchange{
+	0%{color: white;}
+	60%{color: cyan;}
+	100%{color: aqua;}
 }
 
 .wireframeimg {
